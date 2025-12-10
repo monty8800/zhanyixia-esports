@@ -664,4 +664,51 @@ body {
     padding: 0.6rem 1rem;
     font-size: 0.9rem;
   }
+  
+  /* CTA Section Mobile */
+  .cta {
+    padding: 3rem 1.5rem;
+  }
+  
+  .cta h2 {
+    font-size: 2rem;
+  }
+  
+  .cta p {
+    font-size: 1rem;
+  }
+  
+  .cta-content {
+    gap: 2rem;
+  }
+  
+  .qrcode-section {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .qrcode {
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+  }
+  
+  .qrcode-tabs {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .qrcode-tab {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .cta-buttons {
+    width: 100%;
+  }
+  
+  .btn-large {
+    width: 100%;
+    max-width: 300px;
+  }
 }
