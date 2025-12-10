@@ -1,16 +1,94 @@
-# React + Vite
+# 战一下电竞护航俱乐部官网
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+三角洲行动专业护航服务平台 - 安全撤离 · 高效获取资源
 
-Currently, two official plugins are available:
+## 🎮 项目简介
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+战一下电竞护航俱乐部是一个专业的三角洲行动游戏护航服务平台，为玩家提供：
+- 护航撤离服务
+- 陪玩教学
+- 趣味玩法
+- 摸红单服务
+- 赌约单挑战
+- 等多种游戏服务
 
-## React Compiler
+## 🌟 功能特性
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- ✅ 响应式设计，支持移动端
+- ✅ 热门推荐展示
+- ✅ 完整服务价目表，支持分类筛选
+- ✅ 真实用户评价展示
+- ✅ 企业微信客服接入
+- ✅ 公众号二维码展示
 
-## Expanding the ESLint configuration
+## 🛠️ 技术栈
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **框架**: React 19
+- **构建工具**: Vite 7
+- **图标**: React Icons
+- **样式**: CSS3 (渐变、动画、响应式)
+
+## 📦 本地开发
+
+```bash
+# 安装依赖
+npm install
+
+# 启动开发服务器
+npm run dev
+
+# 构建生产版本
+npm run build
+
+# 预览生产构建
+npm run preview
+```
+
+## 🚀 部署
+
+本项目已部署到 Cloudflare Pages
+
+### 自动部署
+每次推送代码到 `main` 分支，Cloudflare Pages 会自动构建和部署
+
+### 手动部署
+```bash
+git add .
+git commit -m "更新内容"
+git push
+```
+
+## 📂 项目结构
+
+```
+website/
+├── public/              # 静态资源
+│   ├── logo.png        # 战一下电竞 LOGO
+│   ├── qrcode.png      # 公众号二维码
+│   └── customer-service.png  # 客服二维码
+├── src/
+│   ├── App.jsx         # 主应用组件
+│   ├── App.css         # 主样式文件
+│   ├── main.jsx        # 入口文件
+│   └── index.css       # 全局样式
+└── package.json
+```
+
+## 🎨 网站模块
+
+1. **Hero 首页** - 品牌展示和快速入口
+2. **热门推荐** - 精选服务套餐
+3. **老板评价** - 真实用户反馈
+4. **完整价目表** - 所有服务分类展示
+5. **我们的优势** - 核心竞争力
+6. **联系客服** - 企业微信和公众号
+
+## 📞 联系方式
+
+- 企业微信客服：扫描网站二维码
+- 公众号：扫描网站二维码关注
+- 服务时间：7x24小时
+
+## 📄 许可证
+
+© 2024 战一下电竞护航俱乐部 保留所有权利
