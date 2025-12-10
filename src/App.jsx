@@ -1,10 +1,14 @@
 import './App.css'
 import { useState } from 'react'
-import { FaCheckCircle, FaTrophy, FaHeadset, FaLock } from 'react-icons/fa'
+import { FaCheckCircle, FaTrophy, FaHeadset, FaLock, FaWeixin, FaQrcode, FaComments } from 'react-icons/fa'
+import { SiTiktok } from 'react-icons/si'
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState('全部')
   const [showCustomerService, setShowCustomerService] = useState(false)
+  const [showDouyinQR, setShowDouyinQR] = useState(false)
+  const [showWechatQR, setShowWechatQR] = useState(false)
+  const [showCustomerQR, setShowCustomerQR] = useState(false)
 
   const reviews = [
     {
@@ -337,10 +341,84 @@ function App() {
         </div>
       </section>
 
+      {/* Floating Buttons */}
+      <div className="floating-buttons">
+        <button 
+          className="float-btn float-btn-wechat"
+          onClick={() => setShowWechatQR(true)}
+          title="微信公众号"
+        >
+          <FaWeixin />
+        </button>
+        <button 
+          className="float-btn float-btn-qrcode"
+          onClick={() => setShowCustomerQR(true)}
+          title="客服二维码"
+        >
+          <FaQrcode />
+        </button>
+        <a 
+          href="https://work.weixin.qq.com/kfid/kfc48f3dea4d2ea29be" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="float-btn float-btn-customer"
+          title="微信客服"
+        >
+          <FaComments />
+        </a>
+        <button 
+          className="float-btn float-btn-douyin"
+          onClick={() => setShowDouyinQR(true)}
+          title="抖音"
+        >
+          <SiTiktok />
+        </button>
+      </div>
+
+      {/* Douyin QR Code Modal */}
+      {showDouyinQR && (
+        <div className="modal-overlay" onClick={() => setShowDouyinQR(false)}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <button className="modal-close" onClick={() => setShowDouyinQR(false)}>×</button>
+            <h3 className="modal-title">🎵 扫码关注抖音</h3>
+            <img src="/douyin-qrcode.jpg" alt="抖音二维码" className="modal-qrcode" />
+            <p className="modal-text">战一下电竞（抖音号：72047935422）</p>
+          </div>
+        </div>
+      )}
+
+      {/* WeChat QR Code Modal */}
+      {showWechatQR && (
+        <div className="modal-overlay" onClick={() => setShowWechatQR(false)}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <button className="modal-close" onClick={() => setShowWechatQR(false)}>×</button>
+            <h3 className="modal-title">📱 扫码关注公众号</h3>
+            <img src="/qrcode.png" alt="微信公众号" className="modal-qrcode" />
+            <p className="modal-text">微信服务号：战一下电竞</p>
+          </div>
+        </div>
+      )}
+
+      {/* Customer Service QR Code Modal */}
+      {showCustomerQR && (
+        <div className="modal-overlay" onClick={() => setShowCustomerQR(false)}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <button className="modal-close" onClick={() => setShowCustomerQR(false)}>×</button>
+            <h3 className="modal-title">💬 扫码联系客服</h3>
+            <img src="/customer-service.png" alt="客服二维码" className="modal-qrcode" />
+            <p className="modal-text">7x24小时在线服务</p>
+          </div>
+        </div>
+      )}
+
       {/* Footer */}
       <footer className="footer">
         <p>© 2025 战一下电竞护航俱乐部 | 纯绿服务 · 安全可靠</p>
-        <p>微信服务号：战一下电竞 | 服务时间：7x24小时</p>
+        <div className="social-links">
+          <p>微信服务号：战一下电竞</p>
+          <p>抖音：战一下电竞（抖音号：72047935422）</p>
+        </div>
+        <p>服务时间：7x24小时</p>
       </footer>
     </div>
   )
