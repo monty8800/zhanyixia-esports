@@ -1,6 +1,7 @@
 import '../App.css'
 import '../pages-styles.css'
 import { useState } from 'react'
+import { Helmet } from 'react-helmet-async'
 import { FaCheckCircle, FaTrophy, FaHeadset, FaLock, FaWeixin, FaQrcode, FaComments } from 'react-icons/fa'
 import { SiTiktok } from 'react-icons/si'
 
@@ -132,7 +133,28 @@ function HomePage() {
   ]
 
   return (
-    <div className="app">
+    <>
+      <Helmet>
+        <title>战一下电竞护航俱乐部 - 三角洲行动专业护航服务 | 纯绿安全撤离</title>
+        <meta name="description" content="战一下电竞专业提供三角洲行动护航服务，包括赌约单、摸红单、趣味单、陪玩教学等。纯绿保障，7x24小时在线，专业打手团队，安全可靠。职业打手与您组队，帮助您安全撤离、获取高价值物资。" />
+        <meta name="keywords" content="三角洲行动,三角洲护航,战一下电竞,游戏护航,陪玩服务,赌约单,摸红单,趣味单,绝密撤离,航天基地,巴克十,潮汐监狱,Delta Force,电竞俱乐部,纯绿护航,组队护航" />
+        <link rel="canonical" href="https://zhan1x.com" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="战一下电竞护航俱乐部 - 三角洲行动专业护航服务" />
+        <meta property="og:description" content="专业三角洲行动护航服务，纯绿保障，安全可靠，7x24小时在线服务" />
+        <meta property="og:url" content="https://zhan1x.com" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://zhan1x.com/logo.png" />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="战一下电竞护航俱乐部 - 三角洲行动专业护航服务" />
+        <meta name="twitter:description" content="专业三角洲行动护航服务，纯绿保障，安全可靠" />
+        <meta name="twitter:image" content="https://zhan1x.com/logo.png" />
+      </Helmet>
+      
+      <div className="app">
       {/* Hero Section */}
       <header className="hero">
         <div className="hero-content">
@@ -422,6 +444,7 @@ function HomePage() {
         <p>服务时间：7x24小时</p>
       </footer>
     </div>
+    </>
   )
 }
 

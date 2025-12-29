@@ -75,8 +75,22 @@ export default function CasesPage() {
     <>
       <Helmet>
         <title>成功案例 - 真实客户评价展示 | 战一下电竞</title>
-        <meta name="description" content="战一下电竞真实客户案例分享，超过10000+成功订单，99%+客户满意度，查看真实评价和服务效果。" />
-        <meta name="keywords" content="三角洲行动成功案例,客户评价,服务案例,真实反馈,护航效果" />
+        <meta name="description" content="战一下电竞真实客户案例分享，超过10000+成功订单，99%+客户满意度，查看真实评价和服务效果。三角洲行动护航服务用户口碑见证，纯绿安全，信赖之选。" />
+        <meta name="keywords" content="三角洲行动成功案例,客户评价,服务案例,真实反馈,护航效果,用户口碑,Delta Force评价" />
+        <link rel="canonical" href="https://zhan1x.com/cases" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="成功案例 - 战一下电竞真实客户评价" />
+        <meta property="og:description" content="10000+成功订单，99%客户满意度，查看真实用户评价" />
+        <meta property="og:url" content="https://zhan1x.com/cases" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://zhan1x.com/logo.png" />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="成功案例 - 战一下电竞真实客户评价" />
+        <meta name="twitter:description" content="10000+成功订单，99%客户满意度" />
+        <meta name="twitter:image" content="https://zhan1x.com/logo.png" />
       </Helmet>
       
       <div className="cases-page">

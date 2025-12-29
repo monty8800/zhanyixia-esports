@@ -87,8 +87,22 @@ export default function ServicesPage() {
     <>
       <Helmet>
         <title>服务项目 - 战一下电竞护航俱乐部 | 三角洲行动护航服务价格表</title>
-        <meta name="description" content="战一下电竞提供专业三角洲行动护航服务，包括护航保底、赌约单、趣味单、摸红单、陪玩等多种服务项目。查看详细价格表，选择适合您的服务套餐。" />
-        <meta name="keywords" content="三角洲行动服务,护航保底,赌约单,趣味单,摸红单,陪玩服务,价格表,服务套餐" />
+        <meta name="description" content="战一下电竞提供专业三角洲行动护航服务，包括护航保底、赌约单、趣味单、摸红单、陪玩等多种服务项目。查看详细价格表，选择适合您的服务套餐。70+服务项目，明码标价，透明公开。" />
+        <meta name="keywords" content="三角洲行动服务,护航保底,赌约单,趣味单,摸红单,陪玩服务,价格表,服务套餐,游戏护航,Delta Force护航" />
+        <link rel="canonical" href="https://zhan1x.com/services" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="服务项目 - 战一下电竞护航服务价格表" />
+        <meta property="og:description" content="70+专业护航服务项目，明码标价，透明公开" />
+        <meta property="og:url" content="https://zhan1x.com/services" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://zhan1x.com/logo.png" />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="服务项目 - 战一下电竞护航服务价格表" />
+        <meta name="twitter:description" content="70+专业护航服务项目，明码标价" />
+        <meta name="twitter:image" content="https://zhan1x.com/logo.png" />
       </Helmet>
       
       <div className="services-page">

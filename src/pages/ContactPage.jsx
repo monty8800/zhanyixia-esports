@@ -61,8 +61,22 @@ export default function ContactPage() {
     <>
       <Helmet>
         <title>联系我们 - 7x24小时在线客服 | 战一下电竞</title>
-        <meta name="description" content="战一下电竞联系方式，微信客服7x24小时在线，快速响应您的需求。提供微信、QQ、抖音等多种联系方式。" />
-        <meta name="keywords" content="战一下电竞客服,联系方式,微信客服,在线咨询,客服电话" />
+        <meta name="description" content="战一下电竞联系方式，微信客服7x24小时在线，快速响应您的需求。提供微信、QQ、抖音等多种联系方式。三角洲行动护航服务咨询，随时为您解答。" />
+        <meta name="keywords" content="战一下电竞客服,联系方式,微信客服,在线咨询,客服电话,三角洲行动咨询,7x24小时在线" />
+        <link rel="canonical" href="https://zhan1x.com/contact" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="联系我们 - 战一下电竞7x24小时在线客服" />
+        <meta property="og:description" content="微信客服7x24小时在线，快速响应您的需求" />
+        <meta property="og:url" content="https://zhan1x.com/contact" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://zhan1x.com/logo.png" />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="联系我们 - 战一下电竞" />
+        <meta name="twitter:description" content="7x24小时在线客服，快速响应" />
+        <meta name="twitter:image" content="https://zhan1x.com/logo.png" />
       </Helmet>
       
       <div className="contact-page">

@@ -5,8 +5,22 @@ export default function AboutPage() {
     <>
       <Helmet>
         <title>关于我们 - 战一下电竞护航俱乐部 | 三角洲行动专业护航团队</title>
-        <meta name="description" content="战一下电竞护航俱乐部，专业的三角洲行动护航团队。派出职业打手与您组队进入对局，提供纯绿安全护航服务，7x24小时在线，实名认证保证金制度。" />
-        <meta name="keywords" content="战一下电竞,三角洲行动护航,游戏护航,职业选手,组队服务,安全护航" />
+        <meta name="description" content="战一下电竞护航俱乐部，专业的三角洲行动护航团队。派出职业打手与您组队进入对局，提供纯绿安全护航服务，7x24小时在线，实名认证保证金制度。10000+成功订单，99%客户满意度。" />
+        <meta name="keywords" content="战一下电竞,三角洲行动护航,游戏护航,职业选手,组队服务,安全护航,电竞俱乐部,纯绿保障,Delta Force" />
+        <link rel="canonical" href="https://zhan1x.com/about" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="关于我们 - 战一下电竞护航俱乐部" />
+        <meta property="og:description" content="专业三角洲行动护航团队，10000+成功订单，99%客户满意度" />
+        <meta property="og:url" content="https://zhan1x.com/about" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://zhan1x.com/logo.png" />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="关于我们 - 战一下电竞护航俱乐部" />
+        <meta name="twitter:description" content="专业三角洲行动护航团队，10000+成功订单" />
+        <meta name="twitter:image" content="https://zhan1x.com/logo.png" />
       </Helmet>
       
       <div className="about-page">

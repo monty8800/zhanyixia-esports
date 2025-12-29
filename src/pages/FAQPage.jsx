@@ -113,8 +113,22 @@ export default function FAQPage() {
     <>
       <Helmet>
         <title>常见问题FAQ - 战一下电竞 | 三角洲行动护航服务疑问解答</title>
-        <meta name="description" content="战一下电竞常见问题解答，包括服务安全、账号保护、服务流程、支付退款等问题。专业客服7x24小时在线，为您解答任何疑问。" />
-        <meta name="keywords" content="三角洲行动护航FAQ,游戏护航问题,护航安全,账号安全,服务流程" />
+        <meta name="description" content="战一下电竞常见问题解答，包括服务安全、账号保护、服务流程、支付退款等问题。专业客服7x24小时在线，为您解答任何疑问。纯绿安全保障，零封号零追缴。" />
+        <meta name="keywords" content="三角洲行动护航FAQ,游戏护航问题,护航安全,账号安全,服务流程,纯绿保障,Delta Force FAQ" />
+        <link rel="canonical" href="https://zhan1x.com/faq" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="常见问题FAQ - 战一下电竞" />
+        <meta property="og:description" content="专业客服7x24小时在线，为您解答任何疑问" />
+        <meta property="og:url" content="https://zhan1x.com/faq" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://zhan1x.com/logo.png" />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="常见问题FAQ - 战一下电竞" />
+        <meta name="twitter:description" content="7x24小时在线客服，解答任何疑问" />
+        <meta name="twitter:image" content="https://zhan1x.com/logo.png" />
       </Helmet>
       
       <div className="faq-page">
