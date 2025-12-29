@@ -1,39 +1,10 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { HelmetProvider } from 'react-helmet-async'
-import Header from './components/layout/Header'
-import Footer from './components/layout/Footer'
-import HomePage from './pages/HomePage'
-import AboutPage from './pages/AboutPage'
-import FAQPage from './pages/FAQPage'
-import CasesPage from './pages/CasesPage'
-import ContactPage from './pages/ContactPage'
-import './App.css'
-import './pages-styles.css'
+import '../App.css'
+import '../pages-styles.css'
+import { useState } from 'react'
+import { FaCheckCircle, FaTrophy, FaHeadset, FaLock, FaWeixin, FaQrcode, FaComments } from 'react-icons/fa'
+import { SiTiktok } from 'react-icons/si'
 
-function App() {
-  return (
-    <HelmetProvider>
-      <BrowserRouter>
-        <div className="app">
-          <Header />
-          <main className="main-content">
-            <Routes>
-              <Route path="/" element={<HomePage />} />
-              <Route path="/about" element={<AboutPage />} />
-              <Route path="/faq" element={<FAQPage />} />
-              <Route path="/services" element={<HomePage />} />
-              <Route path="/cases" element={<CasesPage />} />
-              <Route path="/contact" element={<ContactPage />} />
-            </Routes>
-          </main>
-          <Footer />
-        </div>
-      </BrowserRouter>
-    </HelmetProvider>
-  )
-}
-
-function OldApp() {
+function HomePage() {
   const [selectedCategory, setSelectedCategory] = useState('全部')
   const [showCustomerService, setShowCustomerService] = useState(false)
   const [showDouyinQR, setShowDouyinQR] = useState(false)
@@ -454,5 +425,4 @@ function OldApp() {
   )
 }
 
-export default App
-// export { OldApp }
+export default HomePage
